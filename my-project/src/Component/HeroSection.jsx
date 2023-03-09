@@ -19,7 +19,7 @@ function HeroSection() {
         </button>
       </div>
       <div className="flex justify-center ">
-        <img src={pic} alt="pic" className="" />
+        <img src={pic} alt="pic" className="w-[80%] md:w-auto" />
       </div>
     </section>
   );
