@@ -18,7 +18,7 @@ function Header() {
       <nav
         className={`${
           menuActive ? "block" : "hidden"
-        } flex flex-col bg-light-purple h-72 rounded-md absolute right-7 w-36 lg:relative lg:block lg:bg-black lg:flex-row lg:h-auto lg:w-auto lg:my-auto lg:pt-2`}
+        } flex flex-col bg-light-purple h-72 rounded-md absolute right-7 w-36 lg:relative lg:block lg:bg-[#151515] lg:flex-row lg:h-auto lg:w-auto lg:my-auto lg:pt-2`}
       >
         <button
           className="text-2xl mt-3 ml-28 lg:hidden"
@@ -28,7 +28,9 @@ function Header() {
         </button>
         <ul className="my-auto lg:flex ">
           <li className="bg-button-color text-white text-sm w-20 text-center mx-auto mb-2 py-1 lg:bg-inherit lg:text-lg lg:w-auto lg:mr-16">
-            <a href="/" className="lg:text-dark-green">Home</a>
+            <a href="/" className="lg:text-dark-green">
+              Home
+            </a>
           </li>
           <li className="bg-button-color text-white text-sm w-20 text-center mx-auto mb-2 py-1 lg:bg-inherit lg:text-lg lg:w-auto lg:mr-16">
             <a href="/">About Us</a>
