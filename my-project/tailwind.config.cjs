@@ -10,6 +10,7 @@ module.exports = {
         "light-purple": "rgba(185, 147, 233, 1)",
         "button-color": "rgba(138, 1, 215, 1)",
         "dark-green": "rgba(21, 240, 150, 1)",
+        "deep-purple": "rgba(50, 43, 52, 1)",
       },
       backgroundImage: { 
         background: "url('../assets/images/red')" },
