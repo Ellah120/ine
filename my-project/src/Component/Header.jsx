@@ -1,6 +1,8 @@
 import { RiMenuFill, RiCloseFill } from "react-icons/ri";
 import { useState } from "react";
 import logo from "../assets/image/logo.png";
+import { Link } from "react-router-dom";
+
 function Header() {
   const [menuActive, setMenuActive] = useState(false);
   return (
@@ -39,10 +41,10 @@ function Header() {
             <a href="/">Contact</a>
           </li>
           <li className="bg-button-color text-white text-sm w-20 text-center mx-auto mb-2 py-1 lg:bg-inherit lg:text-lg lg:w-auto lg:mr-6">
-            <a href="/">Login</a>
+            <Link to="login">Login</Link>
           </li>
           <li className="bg-button-color text-white text-sm w-20 text-center mx-auto mb-2 py-1  lg:text-lg lg:w-auto lg:bg-light-purple lg:py-1 lg:px-3 lg:rounded-2xl">
-            <a href="/">Sign in</a>
+            <Link to="signin">Sign in</Link>
           </li>
         </ul>
       </nav>
