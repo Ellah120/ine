@@ -3,7 +3,6 @@ import logo from "../assets/image/logo.png";
 import google from "../assets/image/googleicon.png";
 import line from "../assets/image/Line.png";
 import { useState } from "react";
-// import { GoogleLogin } from "react-google-login";
 import { Link } from "react-router-dom";
 
 
@@ -25,15 +24,6 @@ function Signin() {
     setDetails({ ...details, password: event.target.value });
   }
 
-  //  function handleGoogleSignInSuccess(response) {
-  //    const token = response.accessToken;
-  //    // Store the token in local storage or send it to the server for server-side authentication
-  //    // Redirect the user to the dashboard component
-  //    window.location.href = "/dashboard";
-  //  }
-  //  function handleGoogleSignInFailure(response) {
-  //    console.error("Google Sign-In failed:", response);
-  //  }
 
   return (
     <div className="flex flex-col md:flex-row md:h-screen md:py-[5%] md:px-[20%] lg:px-[25%] lg:h-full">
@@ -47,9 +37,6 @@ function Signin() {
         <h1 className="inline text-lg font-bold pl-[30%] md:block md:pl-0 md:pt-3">
           Sign up
         </h1>
-        {/* <p className="text-xs pt-[1%] text-center text-gray-600 md:text-left">
-          Welcome back! Please enter your details.
-        </p> */}
         <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
           <form onSubmit={submitHandler} className="mt-3">
             <label htmlFor="email" id="email" className="text-sm font-bold">
@@ -98,12 +85,6 @@ function Signin() {
             <span className="mr-4">
               <img src={google} alt="googleicon" className="inline w-[8%]" />
             </span>
-            {/* <GoogleLogin
-              clientId="205773971669-8nbujk1vtk2mef3fh25l1doetfq0n766.apps.googleusercontent.com"
-              onSuccess={handleGoogleSignInSuccess}
-              onFailure={handleGoogleSignInFailure}
-              cookiePolicy={"single_host_origin"}
-            /> */}
             <Link to="/dashboard" className="text-xs">
               Sign in with Google
             </Link>

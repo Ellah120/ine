@@ -10,10 +10,10 @@ function App() {
     <div className="bg-[#151515] h-full">
       <Routes>
         <Route path="/" element={<Layout />} />
-        <Route path="signin" element={<Signin />} />
-        <Route path="login" element={<Login />} />
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="mysavings" element={<MySavings />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/mysavings" element={<MySavings />} />
       </Routes>
     </div>
   );

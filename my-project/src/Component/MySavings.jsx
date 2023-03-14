@@ -18,7 +18,7 @@ function MySavings() {
           <div className="flex">
             <div>
               <button>
-                <Link href="/dashboard">
+                <Link to="/dashboard">
                   <img src={arrowicon} alt="arrow" className="inline w-[60%]" />
                 </Link>
               </button>

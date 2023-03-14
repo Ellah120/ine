@@ -41,10 +41,10 @@ function Header() {
             <a href="/">Contact</a>
           </li>
           <li className="bg-button-color text-white text-sm w-20 text-center mx-auto mb-2 py-1 lg:bg-inherit lg:text-lg lg:w-auto lg:mr-6">
-            <Link to="login">Login</Link>
+            <Link to="/login">Login</Link>
           </li>
           <li className="bg-button-color text-white text-sm w-20 text-center mx-auto mb-2 py-1  lg:text-lg lg:w-auto lg:bg-light-purple lg:py-1 lg:px-3 lg:rounded-2xl">
-            <Link to="signin">Sign in</Link>
+            <Link to="/signin">Sign in</Link>
           </li>
         </ul>
       </nav>

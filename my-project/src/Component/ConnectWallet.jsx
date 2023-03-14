@@ -28,28 +28,28 @@ function ConnectWallet() {
             </span>
           </li>
           <hr className=" border-gray-500 hidden md:block" />
-          <li className="block md:hover:bg-list-color md:pl-2 md:pt-3 md:mb-2 md:ml-2 hover:rounded-lg">
+          <li className="block md:hover:bg-list-color md:pl-2 md:pt-2 md:pb-1 md:mb-2 md:ml-2 hover:rounded-lg md:mt-2">
             <img src={explorepic} alt="homeicon" className="inline" />
             <span className="text-white font-medium text-sm ml-4 hidden md:inline">
               <a href="/">Explore</a>
             </span>
           </li>
           <hr className=" border-gray-500 hidden md:block" />
-          <li className="block md:hover:bg-list-color md:pl-2 md:pt-3 md:mb-2 md:ml-2 hover:rounded-lg">
+          <li className="block md:hover:bg-list-color md:pl-2 md:pt-2 md:pb-1 md:mb-2 md:ml-2 hover:rounded-lg md:mt-2">
             <img src={messagepic} alt="homeicon" className="inline" />
             <span className="text-white font-medium text-sm ml-4 hidden md:inline">
               <a href="/">Messages</a>
             </span>
           </li>
           <hr className=" border-gray-500 hidden md:block" />
-          <li className="block md:hover:bg-list-color md:pl-2 md:pt-3 md:mb-2 md:ml-2 hover:rounded-lg">
+          <li className="block md:hover:bg-list-color md:pl-2 md:pt-2 md:pb-1 md:mb-2 md:ml-2 hover:rounded-lg md:mt-2">
             <img src={profilepic} alt="homeicon" className="inline" />
             <span className="text-white font-medium text-sm ml-4 hidden md:inline">
               <a href="/">Profile</a>
             </span>
           </li>
           <hr className=" border-gray-500 hidden md:block" />
-          <li className="block md:hover:bg-list-color md:pl-1 md:pt-3 md:mb-2 md:ml-2 hover:rounded-lg">
+          <li className="block md:hover:bg-list-color md:pl-1 md:pt-2 md:pb-1 md:mb-2 md:ml-2 hover:rounded-lg md:mt-2">
             <img src={savingspic} alt="homeicon" className="inline" />
             <span className="text-white font-medium text-sm ml-4 hidden md:inline">
               <Link to="/mysavings">My Savings</Link>

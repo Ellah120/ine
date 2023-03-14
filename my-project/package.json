@@ -9,11 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@solana/wallet-adapter-base": "^0.9.22",
+    "@solana/wallet-adapter-phantom": "^0.9.22",
+    "@solana/wallet-adapter-react": "^0.15.30",
+    "firebase": "^9.17.2",
     "google-auth-library": "^8.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
     "react-icons": "^4.8.0",
-    "react-router-dom": "^6.9.0"
+    "react-router-dom": "^6.9.0",
+    "web3": "^1.8.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
