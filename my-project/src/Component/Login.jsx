@@ -26,8 +26,14 @@ function Login() {
     <div className="flex flex-col md:flex-row md:h-screen md:py-[5%] md:px-[20%] lg:px-[25%] lg:h-full">
       <Sidebar />
       <div className="bg-white px-10 pt-3 md:pt-5">
-        <img src={logo} alt="logo" className="w-[8%] inline md:block md:w-[10%]" />
-        <h1 className="inline text-lg font-bold pl-[30%] md:block md:pl-0 md:pt-3">Hey, Hello</h1>
+        <img
+          src={logo}
+          alt="logo"
+          className="w-[8%] inline md:block md:w-[10%]"
+        />
+        <h1 className="inline text-lg font-bold pl-[30%] md:block md:pl-0 md:pt-3">
+          Hey, Hello
+        </h1>
         <p className="text-xs pt-[1%] text-center text-gray-600 md:text-left">
           Welcome back! Please enter your details.
         </p>
@@ -60,6 +66,7 @@ function Login() {
               value={details.email}
               onChange={emailHandler}
               className="border-2 block my-1 py-1 px-2 rounded-md"
+              required
             />
             <label htmlFor="email" id="email" className="text-sm font-bold">
               Password
@@ -70,6 +77,7 @@ function Login() {
               value={details.password}
               onChange={passwordHandler}
               className="border-2 block my-1 py-1 px-2 rounded-md"
+              required
             />
             <label className="cursor-pointer">
               <input type="checkbox" className="w-3 h-3" />

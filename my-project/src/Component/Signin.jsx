@@ -3,6 +3,9 @@ import logo from "../assets/image/logo.png";
 import google from "../assets/image/googleicon.png";
 import line from "../assets/image/Line.png";
 import { useState } from "react";
+// import { GoogleLogin } from "react-google-login";
+import { Link } from "react-router-dom";
+
 
 function Signin() {
   const [details, setDetails] = useState({
@@ -21,6 +24,16 @@ function Signin() {
   function passwordHandler(event) {
     setDetails({ ...details, password: event.target.value });
   }
+
+  //  function handleGoogleSignInSuccess(response) {
+  //    const token = response.accessToken;
+  //    // Store the token in local storage or send it to the server for server-side authentication
+  //    // Redirect the user to the dashboard component
+  //    window.location.href = "/dashboard";
+  //  }
+  //  function handleGoogleSignInFailure(response) {
+  //    console.error("Google Sign-In failed:", response);
+  //  }
 
   return (
     <div className="flex flex-col md:flex-row md:h-screen md:py-[5%] md:px-[20%] lg:px-[25%] lg:h-full">
@@ -48,6 +61,7 @@ function Signin() {
               value={details.email}
               onChange={emailHandler}
               className="border-2 block my-1 py-1 px-2 rounded-md"
+              required
             />
             <label htmlFor="email" id="email" className="text-sm font-bold">
               Password
@@ -58,6 +72,7 @@ function Signin() {
               value={details.password}
               onChange={passwordHandler}
               className="border-2 block my-1 py-1 px-2 rounded-md"
+              required
             />
             <button
               type="submit"
@@ -75,14 +90,23 @@ function Signin() {
               <img src={line} alt="line" className="inline w-24 md:w-20" />
             </span>
           </p>
-          <button className="border-2 border-gray-100 py-1 mt-5 px-10 rounded-md md:px-2 md:mx-auto">
+          <button
+            className="border-2 border-gray-100 py-1 mt-5 px-10 rounded-md md:px-2 md:mx-auto"
+            type="submit"
+          >
             {" "}
             <span className="mr-4">
               <img src={google} alt="googleicon" className="inline w-[8%]" />
             </span>
-            <a href="/" className="text-xs">
+            {/* <GoogleLogin
+              clientId="205773971669-8nbujk1vtk2mef3fh25l1doetfq0n766.apps.googleusercontent.com"
+              onSuccess={handleGoogleSignInSuccess}
+              onFailure={handleGoogleSignInFailure}
+              cookiePolicy={"single_host_origin"}
+            /> */}
+            <Link to="/dashboard" className="text-xs">
               Sign in with Google
-            </a>
+            </Link>
           </button>
         </div>
       </div>
